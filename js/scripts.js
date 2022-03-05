@@ -32,3 +32,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Fetch quotes API
+fetch("https://type.fit/api/quotes")
+.then(function(response) {
+    return response.json();
+})
+.then(function(data) {
+    // console.log(data);
+
+    let max = 1600;
+    randomNo = Math.floor(Math.random() * max);
+
+    document.getElementById("positive-quote").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
+});
