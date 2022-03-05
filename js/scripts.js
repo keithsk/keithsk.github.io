@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Fetch quotes API
-fetch("https://type.fit/api/quotes")
+/* fetch("https://type.fit/api/quotes")
 .then(function(response) {
     return response.json();
 })
@@ -44,5 +44,20 @@ fetch("https://type.fit/api/quotes")
     let max = 1600;
     randomNo = Math.floor(Math.random() * max);
 
+    document.getElementById("positive-quote1").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
+}); */
+
+fetch("https://testing641.p.rapidapi.com/positive-quotes", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "testing641.p.rapidapi.com",
+		"x-rapidapi-key": "5f791bd1d8msh004a9e30923f67bp1994f2jsn1f6f6ab27455"
+	}
+})
+.then(response => {
+	console.log(response);
     document.getElementById("positive-quote").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
+})
+.catch(err => {
+	console.error(err);
 });
