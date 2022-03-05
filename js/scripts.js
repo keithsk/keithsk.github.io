@@ -43,5 +43,5 @@ fetch("https://type.fit/api/quotes")
 
     let max = 1600;
     let randomNo = Math.floor(Math.random() * max);
-    document.getElementById("positive-quote1").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
+    document.getElementById("positive-quote").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
 });
