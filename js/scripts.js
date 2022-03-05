@@ -47,6 +47,8 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById("positive-quote1").innerHTML = data[randomNo].text +" - "+ data[randomNo].author;
 }); */
 
+
+
 fetch("https://testing641.p.rapidapi.com/positive-quotes", {
 	"method": "GET",
 	"headers": {
