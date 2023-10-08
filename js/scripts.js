@@ -35,7 +35,7 @@ function displayQuoteText(objQuotes) {
     let elmQuote = document.getElementById("positive-quote");
 
     if(objQuotes && Object.keys(objQuotes).length > 0) {
-        let max = 1600;
+        let max = 15;
         let randomNo = Math.floor(Math.random() * max);
         elmQuote.innerHTML = objQuotes[randomNo].text +' - '+ objQuotes[randomNo].author;
     } else {
