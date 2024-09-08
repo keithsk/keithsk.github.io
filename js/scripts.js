@@ -37,7 +37,7 @@ function displayQuoteText(objQuotes) {
     if(objQuotes && Object.keys(objQuotes).length > 0) {
         let max = 15;
         let randomNo = Math.floor(Math.random() * max);
-        elmQuote.innerHTML = objQuotes[randomNo].text +' - '+ objQuotes[randomNo].author;
+        elmQuote.innerHTML = objQuotes[randomNo].quote +' - '+ objQuotes[randomNo].author;
     } else {
         elmQuote.innerHTML = '';
     }
@@ -51,15 +51,15 @@ if(quotes) {
 } 
 else {
     // Fetch quotes API
-    fetch("https://type.fit/api/quotes")
+    fetch('https://dummyjson.com/quotes?limit=200')
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
         // console.log(data);
-        sessionStorage.setItem('quotes', JSON.stringify(data));
+        sessionStorage.setItem('quotes', JSON.stringify(data.quotes));
         
-        displayQuoteText(data);
+        displayQuoteText(data.quotes);
     })
     .catch((error) => {
         console.log(error);
