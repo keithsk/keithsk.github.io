@@ -11437,7 +11437,7 @@ section.resume-section .resume-section-content {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 3rem;
 }
 .project-card {
   display: flex;
@@ -11449,8 +11449,18 @@ section.resume-section .resume-section-content {
   border-radius: 0.25rem;
 }
 .project-card h3 { font-size: 2rem; }
-.project-card p { margin-bottom: 1.5rem; }
-.project-card .project-link { margin-top: auto; }
+.project-card p { margin-bottom: 0; }
+.project-title-link {
+  display: inline-block;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+}
+.project-title-link:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
 .project-link {
   display: inline-flex;
   align-items: center;
