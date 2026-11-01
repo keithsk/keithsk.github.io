@@ -11433,3 +11433,50 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* Homepage projects: retain the Resume theme's typography and accent. */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 2rem;
+  border: 1px solid #dee2e6;
+  border-top: 3px solid var(--bs-primary);
+  border-radius: 0.25rem;
+}
+.project-card h3 { font-size: 2rem; }
+.project-card p { margin-bottom: 1.5rem; }
+.project-card .project-link { margin-top: auto; }
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 44px;
+  font-weight: 800;
+  text-underline-offset: 0.25em;
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 4px;
+}
+#sideNav a:focus-visible, #sideNav button:focus-visible { outline-color: #fff; }
+section.resume-section { scroll-margin-top: 4.5rem; }
+@media (max-width: 991.98px) {
+  section.resume-section { padding: 3rem 1.5rem; }
+  #about { min-height: 65vh; min-height: 65svh; }
+  #sideNav .nav-link { padding: 0.75rem 0; }
+  #sideNav .navbar-collapse { max-height: calc(100vh - 4rem); overflow-y: auto; }
+}
+@media (max-width: 767.98px) {
+  .project-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-card { padding: 1.5rem; }
+  h1 { font-size: clamp(3.5rem, 16vw, 6rem); }
+  h2 { font-size: clamp(2.5rem, 10vw, 3.5rem); }
+}
+@media (min-width: 992px) {
+  section.resume-section { scroll-margin-top: 0; }
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Keith SK — software engineering projects and practical web tools." />
         <meta name="author" content="" />
         <title>Keith SK</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -28,34 +28,29 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Keith SK</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://picsum.photos/200" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://picsum.photos/200" alt="" /></span>
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <main class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Keith <span class="text-primary">SK</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        <!-- <a href="mailto:skchiah@gmail.com">skchiah@gmail.com</a> -->
-                    </div>
+                    <div class="subheading mb-4">Software engineering &amp; practical web tools</div>
+                    <a class="project-link mb-4" href="#projects">Explore my projects <span aria-hidden="true">&darr;</span></a>
                     <!-- <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p> -->
                     <p id="positive-quote" class="lead mb-5"></p>
 
@@ -67,7 +62,28 @@
                     </div> -->
                 </div>
             </section>
-            <!-- <hr class="m-0" /> -->
+            <hr class="m-0" />
+            <section class="resume-section" id="projects" aria-labelledby="projects-heading">
+                <div class="resume-section-content">
+                    <h2 id="projects-heading" class="mb-3">Software engineering <span class="text-primary">projects</span></h2>
+                    <p class="lead mb-5">Practical tools built for everyday tasks. Explore the projects below.</p>
+                    <div class="project-grid">
+                        <article class="project-card" aria-labelledby="static-project-heading">
+                            <div class="subheading text-primary mb-3">01 / Web tool</div>
+                            <h3 id="static-project-heading">PayNow QR Code Generator</h3>
+                            <p>Create and print PayNow QR codes for a phone number or UEN.</p>
+                            <a class="project-link" href="/paynow-qr-static/">Open QR generator <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                        <article class="project-card" aria-labelledby="dynamic-project-heading">
+                            <div class="subheading text-primary mb-3">02 / Web tool</div>
+                            <h3 id="dynamic-project-heading">PayNow Dynamic QR Generator</h3>
+                            <p>Generate dynamic PayNow QR codes with payment details for each transaction.</p>
+                            <a class="project-link" href="/paynow-qr-dynamic/">Open dynamic generator <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </div>
+                    <p class="mt-4 mb-0"><a class="project-link" href="https://github.com/keithsk">More on GitHub <span aria-hidden="true">&rarr;</span></a></p>
+                </div>
+            </section>
             <!-- Experience-->
             <!-- <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -230,8 +246,7 @@
                     </ul>
                 </div>
             </section> -->
-        </div>
-        
+        </main>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
