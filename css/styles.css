@@ -11461,14 +11461,6 @@ section.resume-section .resume-section-content {
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
-.project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  min-height: 44px;
-  font-weight: 800;
-  text-underline-offset: 0.25em;
-}
 a:focus-visible, button:focus-visible {
   outline: 3px solid var(--bs-primary);
   outline-offset: 4px;
